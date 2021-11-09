@@ -22,7 +22,13 @@
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
     <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
     <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
-    <sonar.language>java</sonar.language>
+    <sonar.language>java</sonar.language>  
+	  
+   <java.version>11</java.version>  
+   <dependency-check-maven.version>6.1.1</dependency-check-maven.version>
+   <sonar.dependencyCheck.htmlReportPath>./target/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
+   <sonar.dependencyCheck.jsonReportPath>./target/dependency-check-report.json</sonar.dependencyCheck.jsonReportPath> 
+   <sonar.dependencyCheck.summarize>true</sonar.dependencyCheck.summarize>   	  
   </properties>
   
   <dependencies>
